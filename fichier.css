@@ -13,14 +13,15 @@
 
   /* Verts */
   --green-neon: rgb(57, 202, 84);
-  --green-soft: rgb(165, 204, 132);
 
   /* Police */
   --font-orbitron: 'Orbitron', sans-serif;
 }
 
 body {
-  background-color: var(--black-deep);
+  background-image: url('https://wallpapercave.com/wp/wp11535774.jpg');
+  background-attachment: fixed;
+  background-size: 100%;
   color: var(--white-pure);
   font-family: var(--font-orbitron);
   margin: 0;
@@ -47,8 +48,8 @@ a {
 }
 
 a:hover {
-  color: var(--green-soft);
-  border: 2px double var(--green-soft);
+  color: var(--green-neon);
+  border: 2px double var(--green-neon);
 }
 
 ul {
@@ -79,16 +80,19 @@ img {
   margin: 20px auto;
   display: block;
 }
+
 .container {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 label {
   text-align: right;
   display: inline-block;
   width: 100px;
 }
+
 .ligne {
   display: inline-block;
   align-items: center;
@@ -106,19 +110,21 @@ label {
 .ligne input {
   width: 180px;
   border-radius: 5px;
-  border:2px solid black;
+  border:2px solid (--black-deep);
 }
+
 [type="submit"]{
-	background-color: var(--submit-color);
-	color: var(--submit-text);
+	background-color: var(--green-neon);
+	color: var(--green-neon);
 	border-radius: 20px;
 }
+
 header{
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background: #721313;
+  background: var(--gray-medium);
   padding: 15px 0;
   z-index: 999;   
 }
