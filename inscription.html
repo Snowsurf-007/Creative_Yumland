@@ -9,28 +9,38 @@
 <body>
 	
 	<div class="page">
-	<a href="carte.html">CARTE DU RESTAURANT</a>
+	<a href="resto.html">PAGE D'ACCUEIL</a>
     <h2>Inscription</h2>
 
-    <form method="container" action="https://www.cafe-it.fr//cytech/post.php">
+    <form method="container" action="https://www.cafe-it.fr/cytech/post.php">
         <div class="ligne">
-            <label>Nom :</label>
-            <input type="text" name="nom">
+            <label></label>
+            <input type="text" name="nom" id="nom" placeholder="Nom*">
         </div>
 		<br>
         <div class="ligne">
-            <label>Prénom :</label>
-            <input type="text" name="prenom">
+            <label></label>
+            <input type="text" name="prenom" id="prenom" placeholder="Prénom*">
         </div>
 		<br>
         <div class="ligne">
-            <label>Email :</label>
-            <input type="email" name="email">
+            <label></label>
+            <input type="text" name="adresse" id="adresse" placeholder="Adresse*">
         </div>
 		<br>
         <div class="ligne">
-            <label>Mot de passe :</label>
-            <input type="password" name="mdp">
+            <label></label>
+            <input type="email" name="email" id="email" placeholder="Email*">
+        </div>
+		<br>
+        <div class="ligne">
+            <label></label>
+            <input type="password" name="mdp" id="mdp" placeholder="Mot de pase*">
+        </div>
+		<br>
+        <div class="ligne">
+            <label>Date de naissance :</label>
+            <input type="date" name="date" id="date">
         </div>
 		<br>
         <input type="submit" value="S'inscrire" class="bouton">
