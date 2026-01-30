@@ -93,6 +93,14 @@ label {
   width: 100px;
 }
 
+.anniversaire{
+  display: inline-block;
+  align-items: center;
+  margin-bottom: 10px;
+  padding-left: 114px;
+
+}
+
 .ligne {
   display: inline-block;
   align-items: center;
