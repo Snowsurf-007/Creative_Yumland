@@ -79,3 +79,46 @@ img {
   margin: 20px auto;
   display: block;
 }
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+label {
+  text-align: right;
+  display: inline-block;
+  width: 100px;
+}
+.ligne {
+  display: inline-block;
+  align-items: center;
+  margin-bottom: 10px;
+  text-align: center;
+
+}
+
+.ligne label {
+  width: 120px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.ligne input {
+  width: 180px;
+  border-radius: 5px;
+  border:2px solid black;
+}
+[type="submit"]{
+	background-color: var(--submit-color);
+	color: var(--submit-text);
+	border-radius: 20px;
+}
+header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: #721313;
+  padding: 15px 0;
+  z-index: 999;   
+}
