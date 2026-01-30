@@ -1,21 +1,28 @@
 :root {
-  --bg-body: #1e3a5f;
-  --bg-page: #254670;
-  --text-color: #e6e6e6;
-  --border-color: #ffffff;
-  --accent-color: #ffcc00;
+  /* Noirs / Gris */
+  --black-deep: rgb(20, 20, 20);
+  --black-soft: rgb(35, 35, 35);
+  --gray-medium: rgb(79, 87, 84);
 
-  --link-bg: #000000;
-  --link-text: #ffffff;
-  --link-color: lightblue;
-  --font-main: Arial, sans-serif;
+  /* Blanc */
+  --white-pure: rgb(255, 255, 255);
+
+  /* Violets */
+  --purple-dark: rgb(96, 39, 153);
+  --purple-light: rgb(177, 84, 184);
+
+  /* Verts */
+  --green-neon: rgb(57, 202, 84);
+  --green-soft: rgb(165, 204, 132);
+
+  /* Police */
+  --font-orbitron: 'Orbitron', sans-serif;
 }
 
-
 body {
-  background-color: var(--bg-body);
-  color: var(--text-color);
-  font-family: var(--font-main);
+  background-color: var(--black-deep);
+  color: var(--white-pure);
+  font-family: var(--font-orbitron);
   margin: 0;
   padding: 20px;
   text-align: center;
@@ -24,23 +31,24 @@ body {
 .page {
   max-width: 800px;
   margin: 0 auto;
-  background-color: var(--bg-page);
+  background-color: var(--black-soft);
   padding: 30px;
-  border: 2px solid var(--border-color);
+  border: 2px solid var(--purple-light);
 }
 
 a {
-  color: var(--link-text);
-  background-color: var(--link-bg);
+  color: var(--green-neon);
+  background-color: var(--gray-medium);
   padding: 10px 20px;
   text-decoration: none;
   font-weight: bold;
   display: inline-block;
   margin-bottom: 20px;
 }
-a:hover{
-	color: var(--link-color);
-	border: var(--link-color) double;
+
+a:hover {
+  color: var(--green-soft);
+  border: 2px double var(--green-soft);
 }
 
 ul {
@@ -54,20 +62,20 @@ li {
 }
 
 h1 {
-  border-bottom: 2px solid var(--border-color);
+  border-bottom: 2px solid var(--purple-light);
   padding-bottom: 10px;
   margin-top: 40px;
 }
 
 h3 {
-  color: var(--accent-color);
+  color: var(--green-neon);
   margin-top: 30px;
 }
 
 img {
   max-width: 100%;
   height: auto;
-  border: 5px solid var(--border-color);
+  border: 5px solid var(--purple-light);
   margin: 20px auto;
   display: block;
 }
