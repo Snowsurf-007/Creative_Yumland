@@ -106,12 +106,8 @@ header {
   border: 2px solid var(--purple-light);
 }
 
-.carte {
+.page.carte {
   max-width: 800px;
-  margin: 0 auto;
-  background-color: var(--black-soft);
-  padding: 30px;
-  border: 2px solid var(--purple-light);
 }
 
 a {
