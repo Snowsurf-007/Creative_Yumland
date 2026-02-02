@@ -184,6 +184,44 @@ label {
   border-radius: 5px;
   border:2px solid (--black-deep);
 }
+.inscription {
+  display: inline-block;
+  align-items: center;
+  margin-bottom: 10px;
+  text-align: center;
+
+}
+
+.inscription label {
+  width: 120px;
+  text-align: right;
+  margin-right: 1000px;
+}
+
+.inscription input {
+  width: 180px;
+  border-radius: 5px;
+  border:2px solid (--black-deep);
+}
+.inscription2 {
+  display: inline-block;
+  align-items: center;
+  margin-bottom: 10px;
+  text-align: center;
+
+}
+
+.inscription2 label {
+  width: 120px;
+  text-align: right;
+  margin-right: 1000px;
+}
+
+.inscription2 input {
+  width: 180px;
+  border-radius: 5px;
+  border:2px solid (--black-deep);
+}
 
 .ligne {
   display: inline-block;
