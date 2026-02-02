@@ -173,6 +173,17 @@ label {
   padding-left: 114px;
 
 }
+.anniversaire label {
+  width: 120px;
+  text-align: right;
+  margin-right: 10px;
+  min-width: 159px;
+}
+.anniversaire input {
+  width: 180px;
+  border-radius: 5px;
+  border:2px solid (--black-deep);
+}
 
 .ligne {
   display: inline-block;
@@ -377,6 +388,20 @@ label {
   align-items: center;
   margin-bottom: 10px;
   padding-left: 114px;
+}
+.anniversaire label{
+  width: 120px;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.anniversaire input {
+  width: 180px;
+  border-radius: 5px;
+  border: 2px solid var(--black-deep);
+  background-color: var(--black-soft);
+  color: var(--white-pure);
+  padding: 8px;
 }
 
 .ligne {
