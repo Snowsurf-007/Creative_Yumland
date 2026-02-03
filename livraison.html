@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Page de livraison</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fichier.css" media="screen"/>
+</head>
+<body>
+        <h1>Livraison en cours</h1>
+
+    <main class="container">
+
+        <section class="info">
+            <h2>Informations de livraison</h2>
+
+            <p><strong>Adresse :</strong><br>
+                12 rue des Lilas, 75010 Paris
+            </p>
+
+            <p><strong>Code interphone :</strong> B42</p>
+            <p><strong>Étage :</strong> 3ème étage</p>
+
+            <p><strong>Téléphone :</strong><br>
+                <a href="tel:+33612345678">06 12 34 56 78</a>
+            </p>
+
+            <p><strong>Commentaire :</strong><br>
+                Merci de sonner deux fois.
+            </p>
+        </section>
+
+        <section class="actions">
+            <h2>Navigation</h2>
+
+            <a class="btn" 
+               href="https://www.google.com/maps/search/?api=1&query=12+rue+des+Lilas+75010+Paris"
+               target="_blank">
+                Ouvrir dans Maps
+            </a>
+
+            <a class="btn" 
+               href="https://waze.com/ul?q=12%20rue%20des%20Lilas%2075010%20Paris"
+               target="_blank">
+                Ouvrir dans Waze
+            </a>
+        </section>
+
+        <section class="validation">
+            <button class="btn btn-success" onclick="livraisonTerminee()">
+                Livraison terminée
+            </button>
+        </section>
+
+    </main>
+
+    <script>
+        function livraisonTerminee() {
+            alert("La livraison est marquée comme terminée !");
+            // En phase 2/3 : appel API ou changement de statut
+        }
+    </script>
+
+</body>
+</html>

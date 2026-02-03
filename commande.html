@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Commandes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="fichier.css" media="screen"/>
+</head>
+<body>
+
+    <h1>Gestion des commandes</h1>
+
+<main class="container">
+
+    <!-- Commandes à préparer -->
+    <section>
+        <h2>Commandes à préparer</h2>
+
+        <div class="commande">
+            <p><strong>Commande #1024</strong></p>
+            <p>🍔 Burger + 🍟 Frites</p>
+            <p>Client : Alice Martin</p>
+
+            <button class="btn btn-warning" onclick="passerEnLivraison(1024)">
+                Passer en livraison
+            </button>
+        </div>
+
+        <div class="commande">
+            <p><strong>Commande #1025</strong></p>
+            <p>🍕 Pizza Margherita</p>
+            <p>Client : Lucas Bernard</p>
+
+            <button class="btn btn-warning" onclick="passerEnLivraison(1025)">
+                Passer en livraison
+            </button>
+        </div>
+    </section>
+
+    <!-- Commandes en livraison -->
+    <section>
+        <h2>Commandes en livraison</h2>
+
+        <div class="commande livraison">
+            <p><strong>Commande #1021</strong></p>
+            <p>🥗 Salade César</p>
+            <p>Livreur : En route</p>
+
+            <span class="status">En livraison</span>
+        </div>
+    </section>
+
+</main>
+
+<script>
+    function passerEnLivraison(numero) {
+        alert("La commande #" + numero + " passe en livraison.");
+        // Phase 2/3 : mise à jour du statut en base de données
+    }
+</script>
+
+</body>
+</html>
