@@ -18,23 +18,30 @@
   --font-orbitron: 'Orbitron', sans-serif;
 }
 
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-image: url('https://wallpapercave.com/wp/wp11535774.jpg');
   background-attachment: fixed;
-  background-size: 100%;
+  background-size: cover;
+  background-position: center;
   color: var(--white-pure);
   font-family: var(--font-orbitron);
   margin: 0;
   padding: 0;
   text-align: center;
+  min-height: 100vh;
 }
 
+/* ===== HEADER ===== */
 header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
-  background: var(--gray-medium);
+  background: var(--black-deep);
   border-bottom: 3px solid var(--purple-light);
   padding: 10px 0;
   z-index: 999;
@@ -53,6 +60,7 @@ header {
 .logo-link {
   display: flex;
   align-items: center;
+  text-decoration: none;
   padding: 0;
   margin: 0;
 }
@@ -64,6 +72,11 @@ header {
   border-radius: 50%;
   margin-right: 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.header-logo:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px var(--purple-light);
 }
 
 .site-name {
@@ -87,7 +100,6 @@ header {
   border: 2px solid var(--purple-dark);
   border-radius: 5px;
   transition: all 0.3s ease;
-  margin: 0;
 }
 
 .header-nav a:hover {
@@ -98,167 +110,7 @@ header {
   box-shadow: 0 4px 8px rgba(57, 202, 84, 0.5);
 }
 
-.page {
-  max-width: 1500px;
-  margin: 0 auto;
-  background-color: var(--black-soft);
-  padding: 30px;
-  border: 2px solid var(--purple-light);
-}
-
-.page.carte {
-  max-width: 800px;
-}
-
-a {
-  color: var(--green-neon);
-  background-color: var(--gray-medium);
-  padding: 10px 20px;
-  text-decoration: none;
-  font-weight: bold;
-  display: inline-block;
-  margin-bottom: 20px;
-}
-
-a:hover {
-  color: var(--green-neon);
-  border: 2px double var(--green-neon);
-}
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-li {
-  margin-bottom: 10px;
-  font-size: 18px;
-}
-
-h1 {
-  border-bottom: 2px solid var(--purple-light);
-  padding-bottom: 10px;
-  margin-top: 40px;
-}
-
-h3 {
-  color: var(--green-neon);
-  margin-top: 30px;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-  border: 5px solid var(--purple-light);
-  margin: 20px auto;
-  display: block;
-}
-
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-label {
-  text-align: right;
-  display: inline-block;
-}
-
-.anniversaire{
-  display: inline-block;
-  align-items: center;
-  margin-bottom: 10px;
-  padding-left: 114px;
-
-}
-.anniversaire label {
-  width: 120px;
-  text-align: right;
-  margin-right: 10px;
-  min-width: 159px;
-}
-.anniversaire input {
-  width: 180px;
-  border-radius: 5px;
-  border:2px solid (--black-deep);
-}
-.inscription {
-  display: inline-block;
-  align-items: center;
-  margin-bottom: 10px;
-  text-align: center;
-
-}
-
-.inscription label {
-  width: 120px;
-  text-align: right;
-  margin-right: 1000px;
-}
-
-.inscription input {
-  width: 180px;
-  border-radius: 5px;
-  border:2px solid (--black-deep);
-}
-.inscription2 {
-  display: inline-block;
-  align-items: center;
-  margin-bottom: 10px;
-  text-align: center;
-
-}
-
-.inscription2 label {
-  width: 120px;
-  text-align: right;
-  margin-right: 1000px;
-}
-
-.inscription2 input {
-  width: 180px;
-  border-radius: 5px;
-  border:2px solid (--black-deep);
-}
-
-.ligne {
-  display: inline-block;
-  align-items: center;
-  margin-bottom: 10px;
-  text-align: center;
-
-}
-
-.ligne label {
-  width: 120px;
-  text-align: right;
-  margin-right: 10px;
-}
-
-.ligne input {
-  width: 180px;
-  border-radius: 5px;
-  border:2px solid (--black-deep);
-}
-
-[type="submit"]{
-	background-color: var(--green-neon);
-	color: var(--green-neon);
-	border-radius: 20px;
-}
-
-header{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  background: var(--gray-medium);
-  border: solid var(--purple-light);
-  padding: 15px 0;
-  z-index: 999;   
-}
-
+/* ===== FOOTER ===== */
 footer {
   background: var(--black-deep);
   border-top: 3px solid var(--purple-light);
@@ -289,6 +141,7 @@ footer {
   margin: 8px 0;
   font-size: 14px;
   line-height: 1.6;
+  color: var(--white-pure);
 }
 
 .footer-links {
@@ -314,7 +167,6 @@ footer {
 
 .footer-links a:hover {
   color: var(--green-neon);
-  border: none;
 }
 
 .footer-bottom {
@@ -327,6 +179,163 @@ footer {
   color: var(--gray-medium);
 }
 
+/* ===== PAGE PRINCIPALE ===== */
+.page {
+  max-width: 1200px;
+  margin: 100px auto 40px;
+  background-color: rgba(35, 35, 35, 0.95);
+  padding: 40px 30px;
+  border: 2px solid var(--purple-light);
+  border-radius: 10px;
+}
+
+.page.carte {
+  max-width: 1400px;
+}
+
+/* ===== TITRES ===== */
+h1 {
+  border-bottom: 2px solid var(--purple-light);
+  padding-bottom: 10px;
+  margin-top: 40px;
+  margin-bottom: 30px;
+  color: var(--green-neon);
+  text-shadow: 0 0 10px var(--green-neon);
+  font-size: 2.5em;
+}
+
+h2 {
+  color: var(--purple-light);
+  font-size: 2em;
+  margin: 30px 0 20px;
+}
+
+h3 {
+  color: var(--green-neon);
+  margin-top: 30px;
+  font-size: 1.8em;
+  text-align: center;
+}
+
+/* ===== CARTES DE PLATS ===== */
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+  gap: 30px;
+  margin: 40px 0;
+  padding: 0;
+}
+
+.plat-card {
+  background: var(--black-soft);
+  border: 2px solid var(--purple-light);
+  border-radius: 15px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+  position: relative;
+}
+
+.plat-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(57, 202, 84, 0.4);
+  border-color: var(--green-neon);
+}
+
+.plat-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border: none;
+  border-radius: 0;
+  margin: 0;
+  display: block;
+}
+
+.plat-badge {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background: var(--purple-dark);
+  color: var(--white-pure);
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.8em;
+  font-weight: bold;
+  border: 1px solid var(--purple-light);
+}
+
+.plat-content {
+  padding: 25px;
+  text-align: center;
+}
+
+.plat-content h3 {
+  color: var(--white-pure);
+  font-size: 1.5em;
+  margin: 0 0 15px 0;
+}
+
+.plat-price {
+  color: var(--green-neon);
+  font-size: 1.8em;
+  font-weight: bold;
+  margin: 15px 0;
+  text-shadow: 0 0 10px var(--green-neon);
+}
+
+.plat-description {
+  color: var(--purple-light);
+  font-size: 0.9em;
+  margin: 15px 0;
+  line-height: 1.5;
+}
+
+.btn-commander {
+  background-color: var(--white-pure);
+  color: var(--black-deep);
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  font-weight: bold;
+  font-size: 1em;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  width: 100%;
+  font-family: var(--font-orbitron);
+  margin-top: 10px;
+}
+
+.btn-commander:hover {
+  background-color: var(--green-neon);
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(57, 202, 84, 0.5);
+}
+
+/* ===== LISTES DE MENUS CLASSIQUES ===== */
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 20px 0;
+}
+
+li {
+  margin-bottom: 10px;
+  font-size: 18px;
+}
+
+li ul {
+  margin-top: 15px;
+  padding-left: 20px;
+}
+
+li ul li {
+  font-size: 16px;
+  color: var(--purple-light);
+  text-align: left;
+}
+
+/* ===== LIENS ===== */
 a {
   color: var(--green-neon);
   background-color: var(--gray-medium);
@@ -337,41 +346,168 @@ a {
   margin-bottom: 20px;
   border-radius: 5px;
   transition: all 0.3s ease;
+  border: 2px solid transparent;
 }
 
 a:hover {
   color: var(--green-neon);
-  border: 2px double var(--green-neon);
+  border: 2px solid var(--green-neon);
   background-color: var(--purple-dark);
 }
 
-ul {
-  list-style-type: none;
-  padding: 0;
+/* ===== BOUTONS ===== */
+button, [type="submit"] {
+  background-color: var(--green-neon);
+  color: var(--black-deep);
+  padding: 12px 30px;
+  border: none;
+  border-radius: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-family: var(--font-orbitron);
+  font-size: 16px;
 }
 
-li {
-  margin-bottom: 10px;
-  font-size: 18px;
+button:hover, [type="submit"]:hover {
+  background-color: var(--purple-light);
+  color: var(--white-pure);
+  transform: scale(1.05);
 }
 
-h1 {
-  border-bottom: 2px solid var(--purple-light);
-  padding-bottom: 10px;
-  margin-top: 40px;
+/* ===== FORMULAIRES ===== */
+input[type="text"], 
+input[type="email"], 
+input[type="password"], 
+input[type="date"],
+textarea {
+  padding: 10px;
+  border: 2px solid var(--purple-light);
+  border-radius: 5px;
+  background-color: var(--black-soft);
+  color: var(--white-pure);
+  font-family: var(--font-orbitron);
+}
+
+textarea {
+  width: 100%;
+  height: 140px;
+  padding: 15px;
+  font-size: 15px;
+  resize: vertical;
+}
+
+label {
+  text-align: right;
+  display: inline-block;
+  width: 120px;
+  margin-right: 10px;
+}
+
+.ligne, .anniversaire {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+  justify-content: center;
+  gap: 10px;
+}
+
+.ligne input, .anniversaire input {
+  width: 200px;
+  padding: 8px;
+}
+
+.inscription, .inscription2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 15px;
+  gap: 10px;
+}
+
+.inscription label, .inscription2 label {
+  width: auto;
+  text-align: center;
+}
+
+.inscription input, .inscription2 input {
+  width: 300px;
+  padding: 8px;
+}
+
+/* ===== SYSTÈME DE NOTATION ===== */
+.rating-box {
+  background: var(--black-soft);
+  padding: 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  border: 2px solid var(--purple-light);
+  max-width: 500px;
+  margin: 40px auto;
+}
+
+.rating {
+  direction: rtl;
+  unicode-bidi: bidi-override;
+  font-size: 40px;
+  display: inline-block;
+}
+
+.rating input {
+  display: none;
+}
+
+.rating label {
+  color: #ccc;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.rating input:checked ~ label,
+.rating label:hover,
+.rating label:hover ~ label {
   color: var(--green-neon);
-  text-shadow: 0 0 10px var(--green-neon);
 }
 
-h2 {
-  color: var(--purple-light);
+/* ===== PROFIL / COMMANDES ===== */
+.commande {
+  border: 2px solid var(--purple-light);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background: var(--black-soft);
 }
 
-h3 {
-  color: var(--green-neon);
-  margin-top: 30px;
+.livraison {
+  background-color: rgba(177, 84, 184, 0.1);
 }
 
+.status {
+  display: inline-block;
+  margin-top: 8px;
+  padding: 8px 15px;
+  background-color: var(--purple-dark);
+  color: var(--white-pure);
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.user-card {
+  border: 2px solid var(--purple-light);
+  padding: 20px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-color: var(--black-soft);
+}
+
+.user-card p {
+  margin: 10px 0;
+  color: var(--white-pure);
+}
+
+/* ===== IMAGES ===== */
 img {
   max-width: 100%;
   height: auto;
@@ -381,151 +517,14 @@ img {
   border-radius: 10px;
 }
 
-button {
-  background-color: var(--green-neon);
-  color: var(--black-deep);
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-button:hover {
-  background-color: var(--purple-light);
-  color: var(--white-pure);
-  transform: scale(1.05);
-}
-
-input[type="text"] {
-  padding: 10px;
-  border: 2px solid var(--purple-light);
-  border-radius: 5px;
-  background-color: var(--black-soft);
-  color: var(--white-pure);
-  margin-right: 10px;
+/* ===== PARAGRAPHES ===== */
+p {
+  color: var(--purple-light);
   font-family: var(--font-orbitron);
+  line-height: 1.6;
 }
 
-.container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-label {
-  text-align: right;
-  display: inline-block;
-  width: 100px;
-}
-
-.anniversaire {
-  display: inline-block;
-  align-items: center;
-  margin-bottom: 10px;
-  padding-left: 114px;
-}
-.anniversaire label{
-  width: 120px;
-  text-align: right;
-  margin-right: 10px;
-}
-
-.anniversaire input {
-  width: 180px;
-  border-radius: 5px;
-  border: 2px solid var(--black-deep);
-  background-color: var(--black-soft);
-  color: var(--white-pure);
-  padding: 8px;
-}
-.inscription {
-  display: inline-block;
-  align-items: center;
-  margin-bottom: 10px;
-  padding-left: 0px;
-  padding-right: 100px;
-}
-
-.inscription label {
-  width: 120px;
-  text-align: center;
-  margin-right: 10px;
-  padding-left: 10px;
-}
-
-.inscription input {
-  width: 180px;
-  border-radius: 5px;
-  border: 2px solid var(--black-deep);
-  background-color: var(--black-soft);
-  color: var(--white-pure);
-  padding: 5px;
-}
-
-.inscription2 {
-  display: inline-block;
-  align-items: center;
-  margin-bottom: 10px;
-  padding-left: 0px;
-  padding-right: 100px;
-}
-
-.inscription2 label {
-  width: 120px;
-  text-align: center;
-  margin-right: 10px;
-  padding-left: 0px;
-}
-
-.inscription2 input {
-  width: 180px;
-  border-radius: 5px;
-  border: 2px solid var(--black-deep);
-  background-color: var(--black-soft);
-  color: var(--white-pure);
-  padding: 5px;
-}
-.ligne {
-  display: inline-block;
-  align-items: center;
-  margin-bottom: 10px;
-  text-align: center;
-}
-
-.ligne label {
-  width: 120px;
-  text-align: right;
-  margin-right: 10px;
-}
-
-.ligne input {
-  width: 180px;
-  border-radius: 5px;
-  border: 2px solid var(--black-deep);
-  background-color: var(--black-soft);
-  color: var(--white-pure);
-  padding: 8px;
-}
-
-[type="submit"] {
-  background-color: var(--green-neon);
-  color: var(--black-deep);
-  border-radius: 20px;
-  padding: 10px 30px;
-  border: none;
-  font-weight: bold;
-  cursor: pointer;
-  transition: all 0.3s ease;
-}
-
-[type="submit"]:hover {
-  background-color: var(--purple-light);
-  color: var(--white-pure);
-  transform: scale(1.05);
-}
-
+/* ===== RESPONSIVE ===== */
 @media (max-width: 768px) {
   .header-container {
     flex-direction: column;
@@ -557,149 +556,37 @@ label {
   
   .page {
     margin-top: 180px;
+    padding: 20px;
+  }
+  
+  .menu-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  h1 {
+    font-size: 1.8em;
+  }
+  
+  .inscription input, .inscription2 input {
+    width: 100%;
+    max-width: 300px;
   }
 }
-.rating-box {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    background: var(--black-soft);
-    padding: 30px;
-    border-radius: 10px;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    color: white;
-}
 
-
-    .rating {
-        direction: rtl;
-        unicode-bidi: bidi-override;
-        font-size: 40px;
-    }
-
-    .rating input {
-        display: none;
-    }
-
-    .rating label {
-        color: #ccc;
-        cursor: pointer;
-    }
-
-    .rating input:checked ~ label,
-    .rating label:hover,
-    .rating label:hover ~ label {
-        color: var(--green-neon);
-    }
-    textarea {
-    width: 100%;
-    height: 140px;
+@media (max-width: 480px) {
+  .plat-card img {
+    height: 200px;
+  }
+  
+  .plat-content {
     padding: 15px;
-    font-size: 15px;
-    border-radius: 8px;
-    box-sizing: border-box;
-    background-color: var(--black-soft);
-    color: var(--white-pure);
-}
-p{
-  color: var(--purple-light);
-  font-family: var(--font-orbitron);
-}
-
-body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f4f4f4;
-}
-
-header {
-    background-color: #2c3e50;
-    color: white;
-    text-align: center;
-    padding: 15px;
-}
-
-.container {
-    padding: 15px;
-}
-
-section {
-    background: white;
-    padding: 15px;
-    margin-bottom: 15px;
-    border-radius: 8px;
-}
-
-h2 {
-    margin-top: 0;
-    color: #2c3e50;
-}
-
-.btn {
-    display: block;
-    text-align: center;
-    padding: 12px;
-    margin: 10px 0;
-    background-color: #3498db;
-    color: white;
-    text-decoration: none;
-    border-radius: 6px;
-}
-
-.btn:hover {
-    background-color: #2980b9;
-}
-
-.btn-success {
-    background-color: #27ae60;
-    border: none;
-    width: 100%;
-    font-size: 16px;
-}
-
-.btn-success:hover {
-    background-color: #1e8449;
-}
-
-.commande {
-    border: 1px solid #ddd;
-    padding: 12px;
-    border-radius: 6px;
-    margin-bottom: 10px;
-}
-
-.livraison {
-    background-color: #ecf0f1;
-}
-
-.status {
-    display: inline-block;
-    margin-top: 8px;
-    padding: 5px 10px;
-    background-color: #f39c12;
-    color: white;
-    border-radius: 4px;
-    font-size: 14px;
-}
-
-.btn-warning {
-    background-color: #e67e22;
-}
-
-.btn-warning:hover {
-    background-color: #d35400;
-}
-
-.user-card {
-    border: 1px solid #ddd;
-    padding: 15px;
-    border-radius: 8px;
-    margin-bottom: 15px;
-    background-color: #ffffff;
-}
-
-.user-card p {
-    margin: 6px 0;
+  }
+  
+  .plat-content h3 {
+    font-size: 1.2em;
+  }
+  
+  .plat-price {
+    font-size: 1.5em;
+  }
 }
