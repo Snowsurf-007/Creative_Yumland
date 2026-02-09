@@ -3,124 +3,293 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cosmotek.exe - Carte </title>
+    <title>Cosmotek.exe - Carte</title>
     <link href="Logo.png" rel="icon">
     <link rel="stylesheet" href="fichier.css" media="screen"/>
 </head>
 <body>
-	<header>
-    <div class="header-container">
-        <a href="accueil.html" class="logo-link">
-            <img src="Logo.png" alt="COSMOTEK.EXE Logo" class="header-logo">
-            <span class="site-name">COSMOTEK.EXE</span>
-        </a>
-        <nav class="header-nav">
-            <a href="carte.html">CARTE</a>
-            <a href="inscription.html">INSCRIPTION</a>
-            <a href="connexion.html">CONNEXION</a>
-            <a href="profil.html">PROFIL</a>
-        </nav>
-    </div>
-</header>
+    <header>
+        <div class="header-container">
+            <a href="accueil.html" class="logo-link">
+                <img src="Logo.png" alt="COSMOTEK.EXE Logo" class="header-logo">
+                <span class="site-name">COSMOTEK.EXE</span>
+            </a>
+            <nav class="header-nav">
+                <a href="carte.html">CARTE</a>
+                <a href="inscription.html">INSCRIPTION</a>
+                <a href="connexion.html">CONNEXION</a>
+                <a href="profil.html">PROFIL</a>
+                <a href="avis.html">AVIS</a>
+            </nav>
+        </div>
+    </header>
    
-<div class="page carte">
-    <br><br><br><br>
+    <div class="page carte">
         <h1>CARTE DU RESTAURANT</h1>
 
-        <ul>
-            <li>
-                <h3>ENTRÉES</h3>
-                <img src="pizza.png" alt="Pizza du restaurant" width="500">
-                <ul>
-                    <li>LE JAMBON MELON ..................... 5€</li>
-                    <li>SALADE ................... 5€</li>
-                    <li>PLANCHE FONCEDALLE (2pers).............. 18€</li>
-                </ul>
-            </li>
-            
-            <li>
-                <h3>PLATS</h3>
-                <img src="pizza.png" alt="Pizza du restaurant" width="500">
-                <ul>
-                    <li>PIZZA  .................... 13€</li>
-                    <li>PATES PESTOVERDE ............... 11€</li>
-                    <li>BURGER-FRITES ............. 14€</li>
-                </ul>
-            </li>
-            
-            <li>
-                <h3>DESSERTS</h3>
-                <img src="Tartemyrtillles.jpg" alt="Tarte à la myrtille du restaurant" width="500">
-                <ul>
-                    <li>TARTE BLUEBERRY .................... 5.5€</li>
-                    <li>GATEAU SPATIAL ......... 5€</li>
-                    <li>GLACE CRYSTAL .................... 4€</li>
-                </ul>
-            </li>
+        <!-- ENTRÉES -->
+        <h2>ENTRÉES</h2>
+        <div class="menu-grid">
+            <div class="plat-card">
+                <img src="pizza.png" alt="Jambon Melon">
+                <div class="plat-content">
+                    <h3>Le Jambon Melon</h3>
+                    <p class="plat-description">Jambon de Parme et melon frais de saison</p>
+                    <div class="plat-price">5€</div>
+                    <button class="btn-commander">Commander</button>
+                </div>
+            </div>
 
-            <li>
-                <h3>BOISSONS</h3>
-                <img src="Jagerbomb.jpg" alt="Jagerbomb du restaurant" width="250">
-                <ul>
-                    <li> MONOXYDE DE DIHYDROGENE MINERALE ........... 2.5€</li>
-                    <li>EAU PÉTILLANTE ........... 4€</li>
-                    <li>JÄGER BOMB ...................... 6€</li>
-                    <li>TEK PAF (shot) ...................... 7€</li>
-                    <li>RINCE COCHON (50cl) ...................... 4€</li>
-                    <li>ABSINTHE (shot) ...................... 8€</li>
-                    <li>GEL HYDROALCOOLIQUE ...................... 3€</li>
-                </ul>
-            </li>
-        </ul>
+            <div class="plat-card">
+                <img src="pizza.png" alt="Salade">
+                <div class="plat-content">
+                    <h3>Salade</h3>
+                    <p class="plat-description">Salade fraîche du jour avec vinaigrette maison</p>
+                    <div class="plat-price">5€</div>
+                    <button class="btn-commander">Commander</button>
+                </div>
+            </div>
 
+            <div class="plat-card">
+                <span class="plat-badge">2 personnes</span>
+                <img src="pizza.png" alt="Planche Foncedalle">
+                <div class="plat-content">
+                    <h3>Planche Foncedalle</h3>
+                    <p class="plat-description">Assortiment de charcuterie et fromages</p>
+                    <div class="plat-price">18€</div>
+                    <button class="btn-commander">Commander</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- PLATS -->
+        <h2>PLATS</h2>
+        <div class="menu-grid">
+            <div class="plat-card">
+                <span class="plat-badge">Plat du jour</span>
+                <img src="pizza.png" alt="Pizza Cosmique">
+                <div class="plat-content">
+                    <h3>Pizza Cosmique</h3>
+                    <p class="plat-description">Pizza maison garnie façon spatiale</p>
+                    <div class="plat-price">13€</div>
+                    <button class="btn-commander">Commander</button>
+                </div>
+            </div>
+
+            <div class="plat-card">
+                <img src="pizza.png" alt="Pâtes Pestoverde">
+                <div class="plat-content">
+                    <h3>Pâtes Pestoverde</h3>
+                    <p class="plat-description">Pâtes fraîches au pesto basilic</p>
+                    <div class="plat-price">11€</div>
+                    <button class="btn-commander">Commander</button>
+                </div>
+            </div>
+
+            <div class="plat-card">
+                <span class="plat-badge">Populaire</span>
+                <img src="pizza.png" alt="Burger Spatial">
+                <div class="plat-content">
+                    <h3>Burger Spatial</h3>
+                    <p class="plat-description">Burger maison avec frites croustillantes</p>
+                    <div class="plat-price">14€</div>
+                    <button class="btn-commander">Commander</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- DESSERTS -->
+        <h2>DESSERTS</h2>
+        <div class="menu-grid">
+            <div class="plat-card">
+                <img src="Tartemyrtillles.jpg" alt="Tarte Blueberry">
+                <div class="plat-content">
+                    <h3>Tarte Blueberry</h3>
+                    <p class="plat-description">Tarte aux myrtilles fraîches</p>
+                    <div class="plat-price">5.5€</div>
+                    <button class="btn-commander">Commander</button>
+                </div>
+            </div>
+
+            <div class="plat-card">
+                <img src="Tartemyrtillles.jpg" alt="Gâteau Spatial">
+                <div class="plat-content">
+                    <h3>Gâteau Spatial</h3>
+                    <p class="plat-description">Gâteau signature de la maison</p>
+                    <div class="plat-price">5€</div>
+                    <button class="btn-commander">Commander</button>
+                </div>
+            </div>
+
+            <div class="plat-card">
+                <img src="Tartemyrtillles.jpg" alt="Glace Crystal">
+                <div class="plat-content">
+                    <h3>Glace Crystal</h3>
+                    <p class="plat-description">Glace artisanale aux cristaux givrants</p>
+                    <div class="plat-price">4€</div>
+                    <button class="btn-commander">Commander</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- BOISSONS -->
+        <h2>BOISSONS</h2>
+        <div class="menu-grid">
+            <div class="plat-card">
+                <img src="Jagerbomb.jpg" alt="Eau">
+                <div class="plat-content">
+                    <h3>Monoxyde de Dihydrogène</h3>
+                    <p class="plat-description">Eau minérale naturelle</p>
+                    <div class="plat-price">2.5€</div>
+                    <button class="btn-commander">Commander</button>
+                </div>
+            </div>
+
+            <div class="plat-card">
+                <img src="Jagerbomb.jpg" alt="Eau Pétillante">
+                <div class="plat-content">
+                    <h3>Eau Pétillante</h3>
+                    <p class="plat-description">Eau gazeuse rafraîchissante</p>
+                    <div class="plat-price">4€</div>
+                    <button class="btn-commander">Commander</button>
+                </div>
+            </div>
+
+            <div class="plat-card">
+                <span class="plat-badge">Populaire</span>
+                <img src="Jagerbomb.jpg" alt="Jäger Bomb">
+                <div class="plat-content">
+                    <h3>Jäger Bomb</h3>
+                    <p class="plat-description">Cocktail énergétique explosif</p>
+                    <div class="plat-price">6€</div>
+                    <button class="btn-commander">Commander</button>
+                </div>
+            </div>
+
+            <div class="plat-card">
+                <img src="Jagerbomb.jpg" alt="Tek Paf">
+                <div class="plat-content">
+                    <h3>Tek Paf (shot)</h3>
+                    <p class="plat-description">Shot spécial maison</p>
+                    <div class="plat-price">7€</div>
+                    <button class="btn-commander">Commander</button>
+                </div>
+            </div>
+
+            <div class="plat-card">
+                <img src="Jagerbomb.jpg" alt="Rince Cochon">
+                <div class="plat-content">
+                    <h3>Rince Cochon (50cl)</h3>
+                    <p class="plat-description">Bière artisanale locale</p>
+                    <div class="plat-price">4€</div>
+                    <button class="btn-commander">Commander</button>
+                </div>
+            </div>
+
+            <div class="plat-card">
+                <img src="Jagerbomb.jpg" alt="Absinthe">
+                <div class="plat-content">
+                    <h3>Absinthe (shot)</h3>
+                    <p class="plat-description">La fée verte authentique</p>
+                    <div class="plat-price">8€</div>
+                    <button class="btn-commander">Commander</button>
+                </div>
+            </div>
+
+            <div class="plat-card">
+                <img src="Jagerbomb.jpg" alt="Gel Hydroalcoolique">
+                <div class="plat-content">
+                    <h3>Gel Hydroalcoolique</h3>
+                    <p class="plat-description">Pour les aventuriers téméraires</p>
+                    <div class="plat-price">3€</div>
+                    <button class="btn-commander">Commander</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- MENUS -->
         <h1>LES MENUS</h1>
 
-        <img src="" alt="image de plat japonais" width="500">
+        <h2>MENU MIDI</h2>
+        <p>Du lundi au samedi</p>
+        <div class="menu-grid">
+            <div class="plat-card">
+                <div class="plat-content">
+                    <h3>Formule Entrée + Plat</h3>
+                    <p class="plat-description">
+                        <strong>Entrée :</strong> Salade, Charcuterie<br>
+                        <strong>Plat :</strong> Poulet-Riz, Steak-Frites
+                    </p>
+                    <div class="plat-price">15€</div>
+                    <button class="btn-commander">Commander</button>
+                </div>
+            </div>
 
-        <ul>
-            <li>
-                <h3>MENU MIDI</h3>
-                <p>Du lundi au samedi</p>
-                <p>ENTRÉE-PLAT OU PLAT-DESSERT 15€</p>
-                <p>ENTRÉE-PLAT-DESSERT 20€</p>
-                
-                <ul>
-                    <li><strong>Entrée :</strong> Salade, Charcuterie</li>
-                    <li><strong>Plat :</strong> Poulet-Riz, Steak-Frites</li>
-                    <li><strong>Dessert :</strong> Tarte</li>
-                </ul>
-            </li>
-            
-            <li>
-                <h3>MENU DEGUSTATION</h3>
-                <p>Tous les jours</p>
-                <p>ENTRÉE-PLAT OU PLAT-DESSERT 55€</p>
-                
-                <ul>
-                    <li><strong>Entrée :</strong> Jambon de parme, Caviar</li>
-                    <li><strong>Plat :</strong> Saumon, Pièce du boucher</li>
-                    <li><strong>Dessert :</strong> Tarte Tatin, Profiteroles</li>
-                </ul>
-            </li>
-        </ul>
+            <div class="plat-card">
+                <div class="plat-content">
+                    <h3>Formule Plat + Dessert</h3>
+                    <p class="plat-description">
+                        <strong>Plat :</strong> Poulet-Riz, Steak-Frites<br>
+                        <strong>Dessert :</strong> Tarte
+                    </p>
+                    <div class="plat-price">15€</div>
+                    <button class="btn-commander">Commander</button>
+                </div>
+            </div>
 
-        <img src="bolo.jpg" alt="image de plat pates" width="500">
+            <div class="plat-card">
+                <span class="plat-badge">Complet</span>
+                <div class="plat-content">
+                    <h3>Formule Complète</h3>
+                    <p class="plat-description">
+                        <strong>Entrée :</strong> Salade, Charcuterie<br>
+                        <strong>Plat :</strong> Poulet-Riz, Steak-Frites<br>
+                        <strong>Dessert :</strong> Tarte
+                    </p>
+                    <div class="plat-price">20€</div>
+                    <button class="btn-commander">Commander</button>
+                </div>
+            </div>
+        </div>
 
-        <ul>
-            <li>
-                <h3>MENU ENFANT</h3>
-                <p>Tous les jours - 12€</p>
-                <ul>
-                    <li>Salade grecque OU Soufflé au fromage</li>
-                    <li>Pâtes Bolognese OU Nuggets Frites OU Hot-Dog Potatoes </li>
-                    <li>Glace OU Fondant au chocolat</li>
-                </ul>
-            </li>
-        </ul>
+        <h2>MENU DÉGUSTATION</h2>
+        <p>Tous les jours</p>
+        <div class="menu-grid">
+            <div class="plat-card">
+                <span class="plat-badge">Premium</span>
+                <div class="plat-content">
+                    <h3>Formule Dégustation</h3>
+                    <p class="plat-description">
+                        <strong>Entrée :</strong> Jambon de Parme, Caviar<br>
+                        <strong>Plat :</strong> Saumon, Pièce du boucher<br>
+                        <strong>Dessert :</strong> Tarte Tatin, Profiteroles
+                    </p>
+                    <div class="plat-price">55€</div>
+                    <button class="btn-commander">Commander</button>
+                </div>
+            </div>
+        </div>
+
+        <h2>MENU ENFANT</h2>
+        <p>Tous les jours</p>
+        <div class="menu-grid">
+            <div class="plat-card">
+                <img src="bolo.jpg" alt="Menu Enfant">
+                <div class="plat-content">
+                    <h3>Menu Enfant</h3>
+                    <p class="plat-description">
+                        Salade grecque OU Soufflé au fromage<br>
+                        Pâtes Bolognese OU Nuggets Frites OU Hot-Dog Potatoes<br>
+                        Glace OU Fondant au chocolat
+                    </p>
+                    <div class="plat-price">12€</div>
+                    <button class="btn-commander">Commander</button>
+                </div>
+            </div>
+        </div>
 
         <br><br>
-        <a href="carte.html">RETOUR HAUT DE PAGE</a>
-
+        <a href="#top">RETOUR HAUT DE PAGE</a>
     </div> 
 </body>
 </html>
