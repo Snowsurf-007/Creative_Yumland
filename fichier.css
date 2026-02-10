@@ -23,7 +23,7 @@
 }
 
 body {
-  background-image: fond-site.jpg;
+  background-image: url('fond-site.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
