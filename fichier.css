@@ -68,15 +68,10 @@ header {
 .header-logo {
   height: 50px;
   width: auto;
-  border: 2px solid var(--purple-light);
+  border: 2px transparent;
   border-radius: 50%;
   margin-right: 15px;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.header-logo:hover {
-  transform: scale(1.1);
-  box-shadow: 0 0 15px var(--purple-light);
 }
 
 .site-name {
@@ -192,6 +187,22 @@ footer {
 .page.carte {
   max-width: 1400px;
 }
+
+.aire {
+    display: flex;
+    align-items: center; /* aligne verticalement */
+    gap: 20px; /* espace entre texte et image */
+}
+
+.aire p {
+    flex: 1; /* prend l’espace disponible */
+}
+
+.aire img {
+    max-width: 400px;
+    height: auto;
+}
+
 
 /* ===== TITRES ===== */
 h1 {
@@ -338,7 +349,7 @@ li ul li {
 /* ===== LIENS ===== */
 a {
   color: var(--green-neon);
-  background-color: var(--gray-medium);
+  border: 2px solid var(--purple-dark);
   padding: 10px 20px;
   text-decoration: none;
   font-weight: bold;
@@ -346,7 +357,6 @@ a {
   margin-bottom: 20px;
   border-radius: 5px;
   transition: all 0.3s ease;
-  border: 2px solid transparent;
 }
 
 a:hover {
@@ -443,7 +453,7 @@ label {
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   border: 2px solid var(--purple-light);
-  max-width: 500px;
+  max-width: 800px;
   margin: 40px auto;
 }
 
