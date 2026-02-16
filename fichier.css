@@ -452,6 +452,7 @@ ligne, .anniversaire {
   align-items: center;
   margin-bottom: 15px;
   gap: 10px;
+  
 }
 
 .inscription label, .inscription2 label {
@@ -463,7 +464,6 @@ ligne, .anniversaire {
   width: 300px;
   padding: 8px;
 }
-
 /* ===== SYSTÈME DE NOTATION ===== */
 .rating-box {
   background: var(--black-soft);
