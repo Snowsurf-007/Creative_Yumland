@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
 :root {
   /* Noirs / Gris */
   --black-deep: rgb(20, 20, 20);
@@ -20,6 +22,7 @@
 
 * {
   box-sizing: border-box;
+  font-family: var(--font-orbitron);
 }
 
 body {
@@ -420,39 +423,25 @@ label {
   margin-right: 10px;
 }
 
-ligne, .anniversaire {
+.ligne, .anniversaire {
   display: flex;
   align-items: center;
   margin-bottom: 15px;
   justify-content: center;
   gap: 10px;
-  padding-left: 60px;
 }
+
 .ligne input, .anniversaire input {
   width: 200px;
   padding: 8px;
 }
-.connexion {
-  display: inline-block;
-  align-items: center;
-  margin-bottom: 10px;
-  text-align: center;
-  padding-right: 200px;
 
-}
-
-.connexion input {
-  width: 180px;
-  border-radius: 5px;
-  border:2px solid (--black-deep);
-}
 .inscription, .inscription2 {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-bottom: 15px;
   gap: 10px;
-  
 }
 
 .inscription label, .inscription2 label {
@@ -464,6 +453,7 @@ ligne, .anniversaire {
   width: 300px;
   padding: 8px;
 }
+
 /* ===== SYSTÈME DE NOTATION ===== */
 .rating-box {
   background: var(--black-soft);
