@@ -2,8 +2,8 @@
 <html lang="fr">
 <head>
 <meta charset="UTF-8">
-<title>Page de notation</title>
-
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Avis - Creative_Yumland</title>
 <link rel="stylesheet" href="fichier.css" media="screen"/>
 </head>
 
@@ -24,90 +24,38 @@
       </div>
   </header>
 
-<div class="rating-box">
-    <br><br>
-    <h2>Donnez votre note</h2>
-
-    <form>
-        <p>NOTEZ LA NOURRITURE</p>
-        <div class="rating">
-            <input type="radio" id="star5" name="rating" value="5">
-            <label for="star5">★</label>
-
-            <input type="radio" id="star4" name="rating" value="4">
-            <label for="star4">★</label>
-
-            <input type="radio" id="star3" name="rating" value="3">
-            <label for="star3">★</label>
-
-            <input type="radio" id="star2" name="rating" value="2">
-            <label for="star2">★</label>
-
-            <input type="radio" id="star1" name="rating" value="1">
-            <label for="star1">★</label>
-        </div>
-        <br><br>
-        <p>NOTEZ LA LIVRAISON</p>
-<div class="rating">
-    <input type="radio" id="star6" name="rating2" value="5">
-    <label for="star6">★</label>
-
-    <input type="radio" id="star7" name="rating2" value="4">
-    <label for="star7">★</label>
-
-    <input type="radio" id="star8" name="rating2" value="3">
-    <label for="star8">★</label>
-
-    <input type="radio" id="star9" name="rating2" value="2">
-    <label for="star9">★</label>
-
-    <input type="radio" id="star10" name="rating2" value="1">
-    <label for="star10">★</label>
-</div>
-
-
-        <label for="commentaire">Votre commentaire</label>
-        <br><br>
-<textarea id="commentaire" name="commentaire" placeholder="Dites-nous ce que vous en pensez..." rows="4"></textarea>
-
-    </form>
-</div>
-<footer>
-    <div class="footer-container">
-        <div class="footer-section">
-            <h4>À PROPOS</h4>
-            <p>Creative_Yumland - Restaurant intergalactique depuis 2026</p>
-            <p>Une expérience culinaire hors du commun</p>
-        </div>
-        
-        <div class="footer-section">
-            <h4>NAVIGATION</h4>
-            <ul class="footer-links">
-                <li><a href="accueil.html">Accueil</a></li>
-                <li><a href="carte.html">Notre Carte</a></li>
-                <li><a href="inscription.html">Inscription</a></li>
-                <li><a href="connexion.html">Connexion</a></li>
-            </ul>
-        </div>
-        
-        <div class="footer-section">
-            <h4>CONTACT</h4>
-            <p>📍 Galaxie Andromède, Secteur 7G</p>
-            <p>📞 +33 (0)1 23 45 67 89</p>
-            <p>✉️ contact@Creative_Yumland</p>
-        </div>
-        
-        <div class="footer-section">
-            <h4>HORAIRES</h4>
-            <p>Lun - Ven: 11h00 - 23h00</p>
-            <p>Sam - Dim: 10h00 - 00h00</p>
-            <p>🚀 Livraison spatiale disponible</p>
-        </div>
-    </div>
+  <div class="page">
+    <h1>Votre Avis Compte</h1>
     
-    <div class="footer-bottom">
-        <p>&copy; 2026 Creative_Yumland - Tous droits réservés | Mentions légales | Politique de confidentialité</p>
-    </div>
-</footer>
-</body>
-</html>
+    <div class="rating-box">
+        <p>Aidez-nous à améliorer l'expérience culinaire de l'espace.</p>
+        
+        <form action="#" method="get">
+            
+            <div class="inscription">
+                <h3>Notez la Nourriture</h3>
+                <div class="rating">
+                    <input type="radio" id="food5" name="food_rating" value="5"><label for="food5" title="Excellent">★</label>
+                    <input type="radio" id="food4" name="food_rating" value="4"><label for="food4" title="Très bon">★</label>
+                    <input type="radio" id="food3" name="food_rating" value="3"><label for="food3" title="Moyen">★</label>
+                    <input type="radio" id="food2" name="food_rating" value="2"><label for="food2" title="Médiocre">★</label>
+                    <input type="radio" id="food1" name="food_rating" value="1"><label for="food1" title="Mauvais">★</label>
+                </div>
+            </div>
+
+            <br><br>
+
+            <div class="inscription">
+                <h3>Notez la Livraison</h3>
+                <div class="rating">
+                    <input type="radio" id="liv5" name="liv_rating" value="5"><label for="liv5" title="Excellent">★</label>
+                    <input type="radio" id="liv4" name="liv_rating" value="4"><label for="liv4" title="Très bon">★</label>
+                    <input type="radio" id="liv3" name="liv_rating" value="3"><label for="liv3" title="Moyen">★</label>
+                    <input type="radio" id="liv2" name="liv_rating" value="2"><label for="liv2" title="Médiocre">★</label>
+                    <input type="radio" id="liv1" name="liv_rating" value="1"><label for="liv1" title="Mauvais">★</label>
+                </div>
+                <div class="inscription">
+    <label for="commentaire">Commentaire :</label>
+    <textarea id="commentaire" name="commentaire" placeholder="Entrez votre message ici..."></textarea>
+</div>
+            </div>
