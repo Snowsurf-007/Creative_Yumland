@@ -43,7 +43,7 @@ header {
   width: 100%;
   background: var(--black-deep);
   border-bottom: 3px solid var(--purple-light);
-  padding: 10px 0;
+  padding: 15px 0;
   z-index: 999;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 1);
 }
@@ -55,6 +55,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
+  min-height: 60px;
 }
 
 .logo-link {
@@ -63,6 +64,7 @@ header {
   text-decoration: none;
   padding: 0;
   margin: 0;
+  flex-shrink: 0;
 }
 
 .header-logo {
@@ -79,11 +81,14 @@ header {
   font-weight: bold;
   color: var(--green-neon);
   text-shadow: 0 0 10px var(--green-neon);
+  white-space: nowrap;
 }
 
 .header-nav {
   display: flex;
-  gap: 15px;
+  gap: 20px;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .header-nav a {
@@ -95,6 +100,7 @@ header {
   border: 2px solid var(--purple-dark);
   border-radius: 5px;
   transition: all 0.3s ease;
+  white-space: nowrap;
 }
 
 .header-nav a:hover {
@@ -177,7 +183,7 @@ footer {
 /* ===== PAGE PRINCIPALE ===== */
 .page {
   max-width: 1200px;
-  margin: 100px auto 40px;
+  margin: 120px auto 40px;
   background-color: rgba(35, 35, 35, 0.95);
   padding: 40px 30px;
   border: 2px solid var(--purple-light);
@@ -190,12 +196,12 @@ footer {
 
 .aire {
     display: flex;
-    align-items: center; /* aligne verticalement */
-    gap: 20px; /* espace entre texte et image */
+    align-items: center;
+    gap: 20px;
 }
 
 .aire p {
-    flex: 1; /* prend l’espace disponible */
+    flex: 1;
 }
 
 .aire img {
@@ -426,25 +432,7 @@ label {
   width: 200px;
   padding: 8px;
 }
-.connexion {
-  display: inline-block;
-  align-items: center;
-  margin-bottom: 10px;
-  text-align: center;
 
-}
-
-.connexion label {
-  width: 120px;
-  text-align: right;
-  margin-right: 10px;
-}
-
-.connexion input {
-  width: 180px;
-  border-radius: 5px;
-  border:2px solid (--black-deep);
-}
 .inscription, .inscription2 {
   display: flex;
   flex-direction: column;
@@ -553,6 +541,23 @@ p {
 }
 
 /* ===== RESPONSIVE ===== */
+@media (max-width: 1024px) {
+  .header-container {
+    flex-direction: column;
+    gap: 15px;
+    padding: 10px 20px;
+  }
+  
+  .header-nav {
+    width: 100%;
+    justify-content: center;
+  }
+  
+  .page {
+    margin-top: 150px;
+  }
+}
+
 @media (max-width: 768px) {
   .header-container {
     flex-direction: column;
@@ -616,5 +621,10 @@ p {
   
   .plat-price {
     font-size: 1.5em;
+  }
+  
+  .header-nav a {
+    padding: 8px 12px;
+    font-size: 13px;
   }
 }
