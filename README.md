@@ -1,62 +1,120 @@
-**Cosmotek**
+# 🚀 Cosmotek
 
-Interface de ravitaillement galactique - CYTech - préING2 - 2025/2026
+### Interface de ravitaillement galactique
 
-**🎯 Description du projet**
+**CYTech – préING2 – 2025/2026**
 
-Ce projet a pour objectif de réaliser une application web multi-utilisateurs pour un système de restauration "haute pureté" nommé Cosmotek. L’application permet de traiter l'intégralité de la chaîne de commande, de la sélection des produits par l'explorateur jusqu'à la livraison finale par navette.
+---
 
-L'architecture actuelle (Phase #1) repose sur :
+## 🎯 Description du projet
 
-Une interface graphique statique développée en HTML5.
+**Cosmotek** est une application web multi-utilisateurs simulant un système de restauration *haute pureté* destiné aux explorateurs galactiques.
 
-Une charte graphique immersive centralisée dans un fichier CSS unique.
+L’application couvre l’ensemble du cycle de commande :
+de la sélection des produits par l’explorateur jusqu’à la livraison finale par navette.
 
-Une gestion multi-terminaux (ordinateur, tablette, smartphone) adaptée aux différents profils de mission.
+### 🧩 Architecture – Phase #1
 
-**⚙️ Fonctionnalités**
+La première phase repose sur :
 
-1. Interfaces de navigation (Front-end)
-Développement des modules visuels pour les 4 profils utilisateurs :
+* Une **interface graphique statique** développée en **HTML5**
+* Une **charte graphique immersive** centralisée dans un unique fichier CSS
+* Une **adaptation multi-terminaux** (ordinateur, tablette, smartphone)
 
-Client : Accueil cosmique, consultation de la carte des produits et système de notation.
+---
 
-Administrateur : Centre de contrôle pour la gestion des profils.
+## ⚙️ Fonctionnalités
 
-Restaurateur : Interface "Laboratoire" pour la préparation des commandes.
+### 🖥️ 1. Interfaces de navigation (Front-end)
 
-Livreur : Module de trajectoire optimisé pour terminaux mobiles.
+Modules visuels développés pour **4 profils utilisateurs** :
 
-2. Gestion des données et accès
-Authentification : Pages de connexion et d'inscription pour l'accès aux expériences réservées.
+#### 👨‍🚀 Client
 
-Profil Voyageur : Visualisation de l'historique des "expériences" passées et des points de fidélité.
+* Accueil cosmique
+* Consultation de la carte des produits
+* Système de notation
 
-**🛠️ Exécution et Utilisation**
+#### 🛰️ Administrateur
 
-Ouvrez votre terminal et entrez les commandes suivantes :
+* Centre de contrôle
+* Gestion des profils utilisateurs
 
-- git clone https://github.com/Snowsurf-007/Creative_Yumland
-- cd Creative_Yumland
-- Le fichier accueil.html constitue le point d’entrée utilisateur du projet.
+#### 🧪 Restaurateur
 
-Accès aux interfaces :
+* Interface *Laboratoire*
+* Préparation des commandes
 
-Navigation Web : Ouvrir index.html dans un navigateur moderne (Chrome, Firefox).
+#### 🚀 Livreur
 
-Vue Mobile (Livreur) : Utiliser l'outil de développement du navigateur (F12) pour simuler un terminal smartphone.
+* Module de trajectoire optimisé
+* Interface adaptée aux terminaux mobiles
 
+---
 
-**📂 Fichiers**
+### 🔐 2. Gestion des données et accès
 
-Fichiers Sources : Pages HTML statiques et feuille de style style.css.
+* **Authentification**
 
-Documentation de Conception : Fichier PDF définissant la charte graphique (Nébuleuse/Néon).
+  * Page de connexion
+  * Page d’inscription
 
-Rapport de Mission : Synthèse PDF de la Phase #1 (répartition des tâches, problèmes et solutions).
+* **Profil Voyageur**
 
-**👥 Auteurs**
+  * Historique des expériences passées
+  * Système de points de fidélité
 
-Ibrahima TRAORE
-Hugo TRENY
-Lucien LEHEUDRE-EPSTEIN
+---
+
+## 🛠️ Installation & Exécution
+
+### 1️⃣ Cloner le dépôt
+
+```bash
+git clone https://github.com/Snowsurf-007/Creative_Yumland
+cd Creative_Yumland
+```
+
+### 2️⃣ Lancer l’application
+
+* Ouvrir `index.html` dans un navigateur moderne (Chrome, Firefox, Edge)
+* Le fichier `accueil.html` constitue le point d’entrée utilisateur
+
+### 📱 Simulation Mobile (Livreur)
+
+1. Ouvrir les outils de développement (`F12`)
+2. Activer le mode **responsive**
+3. Sélectionner un modèle de smartphone
+
+---
+
+## 📂 Structure du projet
+
+* `index.html` → Point d’entrée principal
+* `accueil.html` → Interface d’accueil
+* `style.css` → Charte graphique Nébuleuse/Néon
+* Pages HTML → Interfaces des différents profils
+
+### 📄 Documentation
+
+* **Charte graphique** : PDF définissant l’univers visuel
+* **Rapport de mission – Phase #1** :
+
+  * Répartition des tâches
+  * Problèmes rencontrés
+  * Solutions mises en place
+
+---
+
+## 👥 Auteurs
+
+* **Ibrahima TRAORE**
+* **Hugo TRENY**
+* **Lucien LEHEUDRE-EPSTEIN**
+
+---
+
+## 🌌 Univers graphique
+
+Charte visuelle immersive inspirée :
+**Nébuleuse / Néon / Interface futuriste**
