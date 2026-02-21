@@ -1,7 +1,7 @@
-🌌 Cosmotek
-Interface de ravitaillement galactique CYTech – préING2 – 2025/2026
+**Cosmotek**
+Interface de ravitaillement galactique - CYTech - préING2 - 2025/2026
 
-🎯 Description du projet
+**🎯 Description du projet**
 Ce projet a pour objectif de réaliser une application web multi-utilisateurs pour un système de restauration "haute pureté" nommé Cosmotek. L’application permet de traiter l'intégralité de la chaîne de commande, de la sélection des produits par l'explorateur jusqu'à la livraison finale par navette.
 
 L'architecture actuelle (Phase #1) repose sur :
@@ -12,7 +12,7 @@ Une charte graphique immersive centralisée dans un fichier CSS unique.
 
 Une gestion multi-terminaux (ordinateur, tablette, smartphone) adaptée aux différents profils de mission.
 
-⚙️ Fonctionnalités
+**⚙️ Fonctionnalités**
 1. Interfaces de navigation (Front-end)
 Développement des modules visuels pour les 4 profils utilisateurs :
 
@@ -29,13 +29,12 @@ Authentification : Pages de connexion et d'inscription pour l'accès aux expéri
 
 Profil Voyageur : Visualisation de l'historique des "expériences" passées et des points de fidélité.
 
-🛠️ Exécution et Utilisation
+**🛠️ Exécution et Utilisation**
 Ouvrez votre terminal et entrez les commandes suivantes :
 
-Bash
-git clone https://github.com/Snowsurf-007/Creative_Yumland
-cd Creative_Yumland
-Le fichier accueil.html constitue le point d’entrée utilisateur du projet.
+- git clone https://github.com/Snowsurf-007/Creative_Yumland
+- cd Creative_Yumland
+- Le fichier accueil.html constitue le point d’entrée utilisateur du projet.
 
 Accès aux interfaces :
 
@@ -44,14 +43,14 @@ Navigation Web : Ouvrir index.html dans un navigateur moderne (Chrome, Firefox).
 Vue Mobile (Livreur) : Utiliser l'outil de développement du navigateur (F12) pour simuler un terminal smartphone.
 
 
-📂 Fichiers
+**📂 Fichiers**
 Fichiers Sources : Pages HTML statiques et feuille de style style.css.
 
 Documentation de Conception : Fichier PDF définissant la charte graphique (Nébuleuse/Néon).
 
 Rapport de Mission : Synthèse PDF de la Phase #1 (répartition des tâches, problèmes et solutions).
 
-👥 Auteurs
+**👥 Auteurs**
 Ibrahima TRAORE
 Hugo TRENY
-Lucien LEHEUDRE
+Lucien LEHEUDRE-EPSTEIN
