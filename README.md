@@ -2,7 +2,7 @@
 
 ### Interface de ravitaillement galactique
 
-**CYTech – préING2 – 2025/2026**
+**CY Tech – préING2 – 2025/2026**
 
 ---
 
