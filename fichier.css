@@ -38,7 +38,7 @@ body {
   min-height: 1080px;
 }
 
-/* ===== HEADER ===== */
+/* HEADER */
 header {
   position: fixed;
   top: 0;
@@ -114,7 +114,7 @@ header {
   box-shadow: 0 4px 8px rgba(57, 202, 84, 0.5);
 }
 
-/* ===== FOOTER ===== */
+/* FOOTER */
 footer {
   background: var(--black-deep);
   border-top: 3px solid var(--purple-light);
@@ -183,7 +183,7 @@ footer {
   color: var(--gray-medium);
 }
 
-/* ===== PAGE PRINCIPALE ===== */
+/* PAGE */
 .page {
   max-width: 1200px;
   margin: 120px auto 40px;
@@ -213,7 +213,7 @@ footer {
 }
 
 
-/* ===== TITRES ===== */
+/* TITRES */
 h1 {
   border-bottom: 2px solid var(--purple-light);
   padding-bottom: 10px;
@@ -237,7 +237,7 @@ h3 {
   text-align: center;
 }
 
-/* ===== CARTES DE PLATS ===== */
+/* CARTE DE PLATS */
 .menu-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
@@ -270,6 +270,11 @@ h3 {
   border-radius: 0;
   margin: 0;
   display: block;
+}
+
+.filter{
+  padding: 7px 14px;
+  font-size: 11px;
 }
 
 .plat-badge {
@@ -332,7 +337,7 @@ h3 {
   box-shadow: 0 4px 15px rgba(57, 202, 84, 0.5);
 }
 
-/* ===== LISTES DE MENUS CLASSIQUES ===== */
+/* LISTES DE MENUS CLASSIQUES */
 ul {
   list-style-type: none;
   padding: 0;
@@ -355,7 +360,7 @@ li ul li {
   text-align: left;
 }
 
-/* ===== LIENS ===== */
+/* LIENS */
 a {
   color: var(--green-neon);
   border: 2px solid var(--purple-dark);
@@ -374,7 +379,7 @@ a:hover {
   background-color: var(--purple-dark);
 }
 
-/* ===== BOUTONS ===== */
+/* BOUTONS */
 button, [type="submit"] {
   background-color: var(--green-neon);
   color: var(--black-deep);
@@ -394,7 +399,7 @@ button:hover, [type="submit"]:hover {
   transform: scale(1.05);
 }
 
-/* ===== FORMULAIRES ===== */
+/* FORMULAIRES */
 input[type="text"], 
 input[type="email"], 
 input[type="password"], 
@@ -487,7 +492,7 @@ label {
   width: 300px;
   padding: 8px;
 }
-/* ===== SYSTÈME DE NOTATION ===== */
+/* NOTATION */
 .rating-box {
   background: var(--black-soft);
   padding: 30px;
@@ -522,7 +527,7 @@ label {
   color: var(--green-neon);
 }
 
-/* ===== PROFIL / COMMANDES ===== */
+/* PROFIL / COMMANDES */
 .commande {
   border: 2px solid var(--purple-light);
   padding: 20px;
@@ -581,7 +586,7 @@ label {
     color: var(--green-neon);
 }
 
-/* ===== IMAGES ===== */
+/* IMAGES */
 img {
   max-width: 100%;
   height: auto;
@@ -591,14 +596,14 @@ img {
   border-radius: 10px;
 }
 
-/* ===== PARAGRAPHES ===== */
+/* PARAGRAPHES */
 p {
   color: var(--purple-light);
   font-family: var(--font-orbitron);
   line-height: 1.6;
 }
 
-/* ===== RESPONSIVE ===== */
+/* RESPONSIVE */
 @media (max-width: 1024px) {
   .header-container {
     flex-direction: column;
