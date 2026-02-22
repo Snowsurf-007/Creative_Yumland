@@ -6,15 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <link rel="stylesheet" href="fichier.css" media="screen"/>
 </head>
+<header>
+    <div class="header-container">
+        <a href="accueil.html" class="logo-link">
+            <img src="Photos/Logo.png" alt="Cosmotek Logo" class="header-logo">
+            <span class="site-name">Cosmotek</span>
+        </a>
+    </div>
+</header>
 <body>
 
-    <h1>Gestion des commandes</h1>
-
 <main class="container">
-
-    <!-- Commandes à préparer -->
+<br><br><br><br><br><br><br><br>
     <section>
-        <h2>Commandes à préparer</h2>
+    
+    <div class="commande">
+        <h1>Gestion des commandes</h1>
+    </div>
+    
+    <div class="commande">
+            <h2><h2>Commandes à préparer</h2></h2>
+    </div>
 
         <div class="commande">
             <p><strong>Commande #1024</strong></p>
@@ -39,9 +51,11 @@
 
     <!-- Commandes en livraison -->
     <section>
-        <h2>Commandes en livraison</h2>
+        <div class="commande">
+            <h2>Commandes en livraison</h2>
+        </div>
 
-        <div class="commande livraison">
+        <div class="commande">
             <p><strong>Commande #1021</strong></p>
             <p>🍰 Gâteau spatial</p>
             <p>Client : Lucien LEHEUDRE</p>
@@ -52,13 +66,6 @@
     </section>
 
 </main>
-
-<script>
-    function passerEnLivraison(numero) {
-        alert("La commande #" + numero + " passe en livraison.");
-        // Phase 2/3 : mise à jour du statut en base de données
-    }
-</script>
 
 </body>
 </html>
