@@ -26,7 +26,7 @@
 }
 
 body {
-  background-image: url('fond-site.jpg');
+  background-image: url('Photos/fond-site.jpg');
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -35,7 +35,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  min-height: 100vh;
+  min-height: 1080px;
 }
 
 /* ===== HEADER ===== */
@@ -221,19 +221,19 @@ h1 {
   margin-bottom: 30px;
   color: var(--green-neon);
   text-shadow: 0 0 10px var(--green-neon);
-  font-size: 2.5em;
+  font-size: 40px;
 }
 
 h2 {
   color: var(--purple-light);
-  font-size: 2em;
+  font-size: 32px;
   margin: 30px 0 20px;
 }
 
 h3 {
   color: var(--green-neon);
   margin-top: 30px;
-  font-size: 1.8em;
+  font-size: 28px;
   text-align: center;
 }
 
@@ -280,7 +280,7 @@ h3 {
   color: var(--white-pure);
   padding: 5px 15px;
   border-radius: 20px;
-  font-size: 0.8em;
+  font-size: 13px;
   font-weight: bold;
   border: 1px solid var(--purple-light);
 }
@@ -292,13 +292,13 @@ h3 {
 
 .plat-content h3 {
   color: var(--white-pure);
-  font-size: 1.5em;
+  font-size: 24px;
   margin: 0 0 15px 0;
 }
 
 .plat-price {
   color: var(--green-neon);
-  font-size: 1.8em;
+  font-size: 28px;
   font-weight: bold;
   margin: 15px 0;
   text-shadow: 0 0 10px var(--green-neon);
@@ -306,7 +306,7 @@ h3 {
 
 .plat-description {
   color: var(--purple-light);
-  font-size: 0.9em;
+  font-size: 14px;
   margin: 15px 0;
   line-height: 1.5;
 }
@@ -318,7 +318,7 @@ h3 {
   border: none;
   border-radius: 25px;
   font-weight: bold;
-  font-size: 1em;
+  font-size: 16px;
   cursor: pointer;
   transition: all 0.3s ease;
   width: 100%;
@@ -417,7 +417,14 @@ textarea {
 }
 
 label {
-  text-align: right;
+  text-align: ri.aire {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aire img {
+    max-width: 100%;
+  }ght;
   display: inline-block;
   width: 120px;
   margin-right: 10px;
@@ -585,26 +592,48 @@ p {
   .page {
     margin-top: 150px;
   }
+  
+  .aire {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aire img {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 768px) {
   .header-container {
     flex-direction: column;
-    gap: 15px;
+    gap: 10px;
+    padding: 10px 15px;
   }
   
   .header-nav {
     flex-wrap: wrap;
     justify-content: center;
+    gap: 10px;
   }
   
   .header-nav a {
     padding: 8px 15px;
-    font-size: 14px;
+    font-size: 15px;
   }
   
   .site-name {
     font-size: 20px;
+  }
+  
+  .header-logo {
+    height: 40px;
+  }
+  
+  .page {
+    margin-top: 190px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 20px 15px;
   }
   
   .footer-container {
@@ -621,21 +650,134 @@ p {
     padding: 20px;
   }
   
+  .page.carte {
+    max-width: 100%;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  
   .menu-grid {
     grid-template-columns: 1fr;
   }
   
   h1 {
-    font-size: 1.8em;
+    font-size: 25px;
+  }
+  
+  h2 {
+    font-size: 22px;
+  }
+
+  h3 {
+    font-size: 18px;
   }
   
   .inscription input, .inscription2 input {
     width: 100%;
     max-width: 300px;
   }
+  
+  .ligne,
+  .anniversaire {
+    flex-direction: column;
+    padding-left: 0;
+    align-items: center;
+  }
+
+  .ligne input,
+  .anniversaire input {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  label {
+    width: auto;
+    text-align: center;
+  }
+
+  .anniversaire label {
+    width: auto;
+  }
+
+  .inscription input,
+  .inscription2 input {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .rating-box {
+    padding: 20px 15px;
+    margin: 20px auto;
+  }
+
+  .rating {
+    font-size: 32px;
+  }
+
+  .aire {
+    flex-direction: column;
+  }
+
+  .aire img {
+    max-width: 100%;
+  }
 }
 
 @media (max-width: 480px) {
+  header {
+    height: 175px;
+    padding: 3px 0;
+  }
+
+  .header-logo {
+    height: 15px;
+    margin-right: 8px;
+  }
+
+  .site-name {
+    font-size: 15px;
+  }
+
+  .header-nav {
+    gap: 6px;
+  }
+
+  .header-nav a {
+    padding: 3px 7px;
+    font-size: 11px;
+    border-radius: 4px;
+  }
+
+  .page {
+    margin-top: 200px;
+    margin-left: 8px;
+    margin-right: 8px;
+    padding: 15px 10px;
+    border-radius: 8px;
+  }
+
+  h1 {
+    font-size: 21px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+  }
+
+  h2 {
+    font-size: 19px;
+  }
+
+  h3 {
+    font-size: 18px;
+  }
+
+  p {
+    font-size: 14px;
+  }
+
+  li {
+    font-size: 15px;
+  }
+  
   .plat-card img {
     height: 200px;
   }
@@ -645,15 +787,40 @@ p {
   }
   
   .plat-content h3 {
-    font-size: 1.2em;
+    font-size: 19px;
   }
   
   .plat-price {
-    font-size: 1.5em;
+    font-size: 24px;
   }
   
   .header-nav a {
-    padding: 8px 12px;F
+    padding: 8px 12px;
     font-size: 13px;
   }
 }
+
+@media (max-width: 360px) {
+  .site-name {
+    font-size: 12px;
+  }
+
+  .header-nav a {
+    padding: 5px 8px;
+    font-size: 10px;
+  }
+
+  .page {
+    margin-top: 210px;
+    padding: 12px 8px;
+  }
+
+  h1 {
+    font-size: 18px;
+  }
+
+  .plat-card img {
+    height: 150px;
+  }
+}display: flex;
+  flex-direction: column;
