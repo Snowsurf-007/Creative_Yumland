@@ -45,6 +45,10 @@ Modules visuels développés pour **3 profils utilisateurs** :
 
 * Interface adaptée aux téléphones mobiles
 
+#### 💻 Administrateur
+
+* Interface permettant de voir les dernieres commandes
+
 ---
 
 ### 🔐 2. Gestion des données et accès
