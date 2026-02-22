@@ -8,7 +8,7 @@
 
 ## 🎯 Description du projet
 
-**Cosmotek** est une application web multi-utilisateurs simulant un système de restauration *haute pureté* destiné aux explorateurs galactiques.
+**Cosmotek** est une application web multi-utilisateurs simulant un système de restauration destiné aux explorateurs galactiques.
 
 L’application couvre l’ensemble du cycle de commande :
 de la sélection des produits par l’explorateur jusqu’à la livraison finale par navette.
@@ -31,10 +31,10 @@ Modules visuels développés pour **3 profils utilisateurs** :
 
 #### 👨‍🚀 Client
 
-* Accueil cosmique
+* Accueil
 * Consultation de la carte des produits
+* Inscription, Connexion et profil
 * Système de notation
-* Commandes
 
 #### 🍳 Restaurateur
 
@@ -43,7 +43,7 @@ Modules visuels développés pour **3 profils utilisateurs** :
 
 #### 🚀 Livreur
 
-* Interface adaptée aux telephones mobiles
+* Interface adaptée aux téléphones mobiles
 
 ---
 
@@ -90,7 +90,7 @@ cd Cosmotek_web
 
 ### 📄 Documentation
 
-* **Charte graphique** : PDF définissant l’univers visuel
+* **Charte graphique** : PNG définissant l’univers visuel
 * **Rapport de mission – Phase #1** :
 
   * Répartition des tâches
@@ -103,11 +103,11 @@ cd Cosmotek_web
 
 * **Ibrahima TRAORE**
 * **Hugo TRENY**
-* **Lucien LEHEUDRE-EPSTEIN**
+* **Lucien LEHEUDRE--EPSTEIN**
 
 ---
 
 ## 🌌 Univers graphique
 
 Charte visuelle immersive inspirée :
-**Nébuleuse / Néon / Interface futuriste**
+**Boite techno / Néon / Interface futuriste**
