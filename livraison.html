@@ -7,52 +7,41 @@
     <link rel="stylesheet" href="fichier.css" media="screen"/>
 </head>
 <body>
-        <h1>Livraison en cours</h1>
+  <main class="commande">
+    <h1>Livraison en cours</h1>
 
-    <main class="container">
 
-        <section class="info">
+        <section>
             <h2>Informations de livraison</h2>
 
             <p><strong>Adresse :</strong><br>
-                12 rue des Lilas, 75010 Paris
+                Avenue du parc, 95000 Cergy
             </p>
 
-            <p><strong>Code interphone :</strong> B42</p>
+            <p><strong>Code interphone :</strong> Il n'y en a pas</p>
             <p><strong>Étage :</strong> 3ème étage</p>
 
             <p><strong>Téléphone :</strong><br>
-                <a href="tel:+33612345678">06 12 34 56 78</a>
+                <a href="tel:+33134251010">01 34 25 10 10</a>
             </p>
 
             <p><strong>Commentaire :</strong><br>
-                Merci de sonner deux fois.
+                Salle Cauchy 302
             </p>
         </section>
 
         <section class="actions">
             <h2>Navigation</h2>
 
-            <a class="btn" 
-               href="https://www.google.com/maps/search/?api=1&query=12+rue+des+Lilas+75010+Paris"
-               target="_blank">
-                Ouvrir dans Maps
-            </a>
+            <a href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x47e6f5265bbc2f79:0x301dd6c7102e1852?sa=X&ved=1t:8290&ictx=111"
+               target="_blank">Ouvrir dans Maps</a>
 
-            <a class="btn" 
-               href="https://waze.com/ul?q=12%20rue%20des%20Lilas%2075010%20Paris"
-               target="_blank">
-                Ouvrir dans Waze
-            </a>
+            <a href="https://www.waze.com/fr/live-map/directions/cy-tech-avenue-du-parc-cergy?to=place.w.1376746.13570856.2605144" target="_blank">Ouvrir dans Waze</a>
         </section>
 
-        <section class="validation">
-            <button class="btn btn-success" onclick="livraisonTerminee()">
-                Livraison terminée
-            </button>
-        </section>
+        <section><button>Livraison terminée</button></section>
 
-    </main>
+  </main>
 
 </body>
 </html>
