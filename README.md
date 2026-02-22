@@ -88,9 +88,25 @@ cd Cosmotek_web
 
 ## 📂 Structure du projet
 
-* `accueil.html` → Interface d’accueil
-* `` → Interfaces des différents profils
-* `style.css` → Charte graphique et styles
+* `accueil.html` → Page d’accueil présentant le nom du restaurant, une barre de recherche et une sélection de plats (populaires).
+
+* `admin.html` → Interface administrateur permettant de consulter la liste des utilisateurs et les dernières commandes.
+
+* `carte.html` → Page de consultation complète de la carte avec barre de recherche et filtres par catégorie (types de plats).
+
+* `inscription.html` → Page d’inscription contenant le formulaire client (nom, prénom, adresse, téléphone, mail, mot de passe…).
+
+* `connexion.html` → Page de connexion avec formulaire d’authentification classique.
+
+* `profil.html` → Page profil client affichant les informations personnelles et le compte fidélité.
+
+* `commande.html` → Interface restaurateur affichant les commandes en attente de préparation et celles en cours de livraison.
+
+* `livraison.html` → Interface livreur optimisée mobile affichant les informations de livraison (adresse, code, téléphone, commentaires…).
+
+* `avis.html` → Page permettant au client de noter la livraison et la qualité des produits reçus.
+
+* `style.css` → Fichier unique regroupant toute la charte graphique et les styles communs.
 
 ### 📄 Documentation
 
