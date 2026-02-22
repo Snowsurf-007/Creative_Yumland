@@ -27,28 +27,23 @@ La première phase repose sur :
 
 ### 🖥️ 1. Interfaces de navigation (Front-end)
 
-Modules visuels développés pour **4 profils utilisateurs** :
+Modules visuels développés pour **3 profils utilisateurs** :
 
 #### 👨‍🚀 Client
 
 * Accueil cosmique
 * Consultation de la carte des produits
 * Système de notation
+* Commandes
 
-#### 🛰️ Administrateur
+#### 🍳 Restaurateur
 
-* Centre de contrôle
-* Gestion des profils utilisateurs
-
-#### 🧪 Restaurateur
-
-* Interface *Laboratoire*
+* Interface adaptée aux tablettes
 * Préparation des commandes
 
 #### 🚀 Livreur
 
-* Module de trajectoire optimisé
-* Interface adaptée aux terminaux mobiles
+* Interface adaptée aux telephones mobiles
 
 ---
 
@@ -59,7 +54,7 @@ Modules visuels développés pour **4 profils utilisateurs** :
   * Page de connexion
   * Page d’inscription
 
-* **Profil Voyageur**
+* **Profil Client**
 
   * Historique des expériences passées
   * Système de points de fidélité
@@ -71,29 +66,27 @@ Modules visuels développés pour **4 profils utilisateurs** :
 ### 1️⃣ Cloner le dépôt
 
 ```bash
-git clone https://github.com/Snowsurf-007/Creative_Yumland
-cd Creative_Yumland
+git clone https://github.com/Snowsurf-007/Cosmotek_web
+cd Cosmotek_web
 ```
 
 ### 2️⃣ Lancer l’application
 
-* Ouvrir `index.html` dans un navigateur moderne (Chrome, Firefox, Edge)
 * Le fichier `accueil.html` constitue le point d’entrée utilisateur
 
 ### 📱 Simulation Mobile (Livreur)
 
 1. Ouvrir les outils de développement (`F12`)
 2. Activer le mode **responsive**
-3. Sélectionner un modèle de smartphone
+3. Sélectionner une taille pour les smartphones (360 x 740 par exemple)
 
 ---
 
 ## 📂 Structure du projet
 
-* `index.html` → Point d’entrée principal
 * `accueil.html` → Interface d’accueil
-* `style.css` → Charte graphique Nébuleuse/Néon
-* Pages HTML → Interfaces des différents profils
+* `` → Interfaces des différents profils
+* `style.css` → Charte graphique et styles
 
 ### 📄 Documentation
 
