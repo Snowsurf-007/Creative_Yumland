@@ -1,4 +1,4 @@
-# 🚀 Cosmotek
+# 🪐 Cosmotek
 
 ### Interface de ravitaillement galactique
 
